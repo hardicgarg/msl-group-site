@@ -1,21 +1,26 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-// Import partner logos
-import wethreeLogo from '../assets/partners/wethree.png';
-import seacubeLogo from '../assets/partners/seacube.jpg';
-import stelliumLogo from '../assets/partners/stellium.png';
-import greenleafLogo from '../assets/partners/greenleaf.png';
-import enhanceLogo from '../assets/partners/enhance.jpg';
+// Dynamically import all partner logos from the directory
+const logoModules = import.meta.glob('../assets/partners/*.{png,jpg,jpeg,svg}', { eager: true });
 
 const LogoTicker = () => {
-    const partners = [
-        { name: 'We Three Foodstuff Trading', logo: wethreeLogo },
-        { name: 'SeaCube Logistics', logo: seacubeLogo },
-        { name: 'Stellium', logo: stelliumLogo },
-        { name: 'GreenLeaf', logo: greenleafLogo },
-        { name: 'Enhance Group', logo: enhanceLogo },
-    ];
+    // Transform the imported modules into the partners array
+    const partners = Object.keys(logoModules).map((path) => {
+        // Extract filename without extension to use as the name
+        const fileName = path.split('/').pop().split('.')[0];
+        // Convert camelCase, snake_case, or kebab-case to Title Case for display
+        const name = fileName
+            .replace(/([A-Z])/g, ' $1') // Add space before capital letters
+            .replace(/[-_]/g, ' ')      // Replace hyphens/underscores with spaces
+            .replace(/\b\w/g, char => char.toUpperCase()) // Capitalize first letter of each word
+            .trim();
+
+        return {
+            name: name,
+            logo: logoModules[path].default
+        };
+    });
 
     // Duplicate the array for seamless infinite scroll
     const duplicatedPartners = [...partners, ...partners, ...partners];
@@ -37,7 +42,7 @@ const LogoTicker = () => {
                         x: {
                             repeat: Infinity,
                             repeatType: 'loop',
-                            duration: 20,
+                            duration: 40,
                             ease: 'linear',
                         },
                     }}
