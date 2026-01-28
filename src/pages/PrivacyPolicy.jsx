@@ -5,14 +5,34 @@ const PrivacyPolicy = () => {
         <div className="animate-fade-in">
             {/* Hero Section */}
             <section
-                className="relative min-h-[40vh] flex items-center justify-center pt-32"
                 style={{
-                    background: 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)'
+                    position: 'relative',
+                    minHeight: '400px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    paddingTop: '200px',
+                    paddingBottom: '60px',
+                    background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
+                    textAlign: 'center',
+                    color: 'white'
                 }}
             >
-                <div className="container text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Privacy Policy</h1>
-                    <p className="text-lg text-slate-600">Last updated: July 04, 2024</p>
+                <div
+                    className="container"
+                    style={{
+                        width: '100%',
+                        maxWidth: '1600px',
+                        margin: '0 auto',
+                        padding: '0 2rem',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                        textAlign: 'center'
+                    }}
+                >
+                    <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: 'white' }}>Privacy Policy</h1>
+                    <p className="text-lg opacity-90" style={{ textAlign: 'center', width: '100%' }}>Last updated: July 04, 2024</p>
                 </div>
             </section>
 
