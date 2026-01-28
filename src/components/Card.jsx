@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 
-const Card = ({ title, description, category, icon: Icon, image }) => {
+const Card = ({ title, description, category, icon: Icon, image, link }) => {
     return (
         <motion.div
             whileHover={{ y: -8 }}
@@ -10,8 +10,11 @@ const Card = ({ title, description, category, icon: Icon, image }) => {
             style={{
                 position: 'relative',
                 overflow: 'hidden',
-                minHeight: image ? '320px' : 'auto'
+                minHeight: image ? '320px' : 'auto',
+                cursor: link ? 'pointer' : 'default',
+                height: '100%'
             }}
+            onClick={() => link && window.open(link, '_blank', 'noopener,noreferrer')}
         >
             {/* Background Image */}
             {image && (
@@ -44,7 +47,7 @@ const Card = ({ title, description, category, icon: Icon, image }) => {
                     <div style={{ padding: '0.75rem', backgroundColor: '#f1f5f9', borderRadius: '0.5rem', color: 'var(--color-primary)' }}>
                         {Icon ? <Icon size={24} /> : <div style={{ width: '24px', height: '24px' }} />}
                     </div>
-                    <ArrowUpRight size={20} style={{ color: '#94a3b8' }} className="arrow-icon" />
+                    {link && <ArrowUpRight size={20} style={{ color: 'var(--color-accent)' }} className="arrow-icon" />}
                 </div>
 
                 <div style={{ marginBottom: '0.75rem' }}>
