@@ -57,7 +57,7 @@ const Footer = () => {
                     <p>© {new Date().getFullYear()} Mittal Software Labs Limited. All rights reserved.</p>
                     <div className="footer-legal">
                         <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
-                        <span>Terms of Service</span>
+                        <Link to="/terms-and-conditions" className="hover:text-white transition-colors">Terms and Conditions</Link>
                     </div>
                 </div>
             </div>
