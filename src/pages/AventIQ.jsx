@@ -14,7 +14,7 @@ const AventIQ = () => {
                 subtitle="The Future of Enterprise Automation & AI Agents"
                 backgroundImage="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80"
                 primaryAction={{ label: 'Schedule Demo', onClick: () => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }) }}
-                secondaryAction={{ label: 'View Solutions', onClick: () => document.getElementById('solutions').scrollIntoView({ behavior: 'smooth' }) }}
+                secondaryAction={{ label: 'Visit Website', onClick: () => window.open('https://www.aventiq.ai/', '_blank') }}
             />
 
             {/* Introduction - using Reusable SplitSection */}

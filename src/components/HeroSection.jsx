@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const HeroSection = ({ title, subtitle, backgroundImage, primaryAction, secondaryAction }) => {
+const HeroSection = ({ title, subtitle, backgroundImage, primaryAction, secondaryAction, tertiaryAction }) => {
     return (
         <div className="hero-section">
             {/* Background */}
@@ -44,6 +44,14 @@ const HeroSection = ({ title, subtitle, backgroundImage, primaryAction, secondar
                                 className="btn btn-secondary"
                             >
                                 {secondaryAction.label}
+                            </button>
+                        )}
+                        {tertiaryAction && (
+                            <button
+                                onClick={tertiaryAction.onClick}
+                                className="btn btn-secondary"
+                            >
+                                {tertiaryAction.label}
                             </button>
                         )}
                     </div>

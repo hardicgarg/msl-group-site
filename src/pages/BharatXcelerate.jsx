@@ -15,6 +15,7 @@ const BharatXcelerate = () => {
                 backgroundImage="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80"
                 primaryAction={{ label: 'For Colleges', onClick: () => document.getElementById('colleges').scrollIntoView({ behavior: 'smooth' }) }}
                 secondaryAction={{ label: 'For Students', onClick: () => document.getElementById('students').scrollIntoView({ behavior: 'smooth' }) }}
+                tertiaryAction={{ label: 'Visit Website', onClick: () => window.open('https://www.bharatxcelerate.com/', '_blank') }}
             />
 
             {/* Introduction - using Reusable SplitSection */}

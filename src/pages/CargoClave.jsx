@@ -14,7 +14,7 @@ const CargoClave = () => {
                 subtitle="The Operating System for Global Logistics"
                 backgroundImage="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80"
                 primaryAction={{ label: 'Book a Demo', onClick: () => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }) }}
-                secondaryAction={{ label: 'Explore Platform', onClick: () => document.getElementById('features').scrollIntoView({ behavior: 'smooth' }) }}
+                secondaryAction={{ label: 'Visit Website', onClick: () => window.open('https://www.cargoclave.com/', '_blank') }}
             />
 
             {/* Introduction - using Reusable SplitSection */}
