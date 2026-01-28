@@ -34,7 +34,7 @@ const Contact = () => {
                                 color: '#1a1a1a',
                                 letterSpacing: '-0.02em'
                             }}>
-                                +91 11 4475 6172
+                                011 4475 6172
                             </h2>
                         </div>
 
@@ -48,7 +48,7 @@ const Contact = () => {
                             <p style={{ marginBottom: '1rem' }}>
                                 <strong style={{ color: '#1a1a1a', fontSize: '0.9rem' }}>INDIA:</strong>{' '}
                                 <span style={{ color: '#1a1a1a', fontWeight: '600', textTransform: 'uppercase', fontSize: '0.95rem', lineHeight: '1.6' }}>
-                                    B1/E13, BLOCK E, MOHAN COOPERATIVE INDUSTRIAL ESTATE, BADARPUR, NEW DELHI, DELHI 110044, INDIA
+                                    B1/E13, BLOCK E, MOHAN COOPERATIVE INDUSTRIAL ESTATE, BADARPUR, NEW DELHI, DELHI 110044
                                 </span>
                             </p>
                             <p style={{ margin: 0 }}>
@@ -73,7 +73,7 @@ const Contact = () => {
                                 letterSpacing: '-0.02em',
                                 textTransform: 'uppercase'
                             }}>
-                                CONTACT@MSL-LABS.COM
+                                INFO@MITTALSOFTWARELABS.COM
                             </h2>
                         </div>
                     </div>
@@ -169,7 +169,7 @@ const Contact = () => {
                         boxShadow: '0 4px 20px rgba(0,0,0,0.1)'
                     }}>
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.0523860731!2d77.2930!3d28.5090!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce7a41cd5cd1f%3A0x7c6c5c1e0f5e7f0a!2sMohan%20Cooperative%20Industrial%20Estate!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.021667469608!2d77.29158307525283!3d28.50974597573646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce7daf5c4251f%3A0xe53fa28445701768!2sMittal%20Software%20Labs%20Limited!5e0!3m2!1sen!2sin!4v1719565578768!5m2!1sen!2sin"
                             width="100%"
                             height="400"
                             style={{ border: 0 }}

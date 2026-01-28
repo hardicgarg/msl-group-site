@@ -44,7 +44,7 @@ const Footer = () => {
                     {/* Connect Column */}
                     <div className="footer-col">
                         <h4 className="footer-heading">Connect</h4>
-                        <p className="footer-contact">info@msl-labs.com</p>
+                        <p className="footer-contact">info@mittalsoftwarelabs.com</p>
                         <div className="social-icons">
                             <a href="#" className="social-icon"><Linkedin size={20} /></a>
                             <a href="#" className="social-icon"><Twitter size={20} /></a>
