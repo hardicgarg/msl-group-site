@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroSection from '../components/HeroSection';
 import Section from '../components/Section';
+import SplitSection from '../components/SplitSection';
 import { motion } from 'framer-motion';
 import { CheckCircle, Award, Globe, Users } from 'lucide-react';
 
@@ -14,14 +15,21 @@ const About = () => {
             />
 
             {/* Vision Section - Zig Zag */}
-            <Section title="Our Vision">
+            {/* Vision Section - Zig Zag */}
+            {/* Vision Section - Zig Zag */}
+            <SplitSection
+                title="Our Vision"
+                highlight="Strategic Intelligence"
+                image="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80"
+                imageAlt="Global Network"
+            >
                 <p>
                     <strong>Mittal Software Labs Limited (MSL)</strong> functions as the strategic brain and operational backbone for a diverse portfolio of software platforms.
                 </p>
                 <p>
                     We provide shared strategic direction, product thinking, deep technology capabilities, and operational governance, allowing each vertical to focus on execution and growth.
                 </p>
-            </Section>
+            </SplitSection>
 
             {/* What We Do - Zig Zag Reverse */}
             <Section
