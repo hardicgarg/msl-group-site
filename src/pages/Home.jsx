@@ -18,6 +18,15 @@ const Home = () => {
             color: 'text-blue-600'
         },
         {
+            id: 'cargoclave',
+            title: 'CargoClave',
+            subtitle: 'Logistics-Focused SaaS Platforms',
+            desc: 'Domain-specific technology products built for operational visibility and execution control in logistics.',
+            link: '/cargoclave',
+            image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80',
+            color: 'text-indigo-600'
+        },
+        {
             id: 'zenhirepro',
             title: 'ZenHirePro',
             subtitle: 'Recruitment & Workforce Solutions',
@@ -34,15 +43,6 @@ const Home = () => {
             link: '/bharatxcelerate',
             image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80',
             color: 'text-orange-600'
-        },
-        {
-            id: 'cargoclave',
-            title: 'CargoClave',
-            subtitle: 'Logistics-Focused SaaS Platforms',
-            desc: 'Domain-specific technology products built for operational visibility and execution control in logistics.',
-            link: '/cargoclave',
-            image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80',
-            color: 'text-indigo-600'
         }
     ];
 
