@@ -97,7 +97,7 @@ const AventIQ = () => {
 
             {/* Call to Action */}
             {/* Call to Action */}
-            <section id="contact" className="py-24 relative overflow-hidden bg-slate-50">
+            <section id="contact" className="py-24 relative overflow-hidden bg-slate-50" style={{ paddingBottom: '6rem' }}>
                 <div className="absolute inset-0 bg-grid-slate-200/50 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] z-0" />
 
                 <div className="container relative z-10 flex flex-col items-center justify-center text-center">
@@ -107,7 +107,32 @@ const AventIQ = () => {
                     <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-12 leading-relaxed !text-center">
                         Join forward-thinking companies that are redefining operations with AventIQ. Our platform integrates seamlessly with your existing infrastructure, delivering measurable ROI, operational agility, and a future-ready workforce from day one.
                     </p>
-                    <button className="btn bg-blue-600 text-white hover:bg-blue-700 px-10 py-5 rounded-full font-bold text-lg flex items-center gap-3 transition-all hover:gap-5 shadow-lg hover:shadow-blue-500/25 transform hover:-translate-y-1">
+                    <button
+                        className="btn-cta"
+                        style={{
+                            backgroundColor: '#2563eb',
+                            color: 'white',
+                            padding: '1.25rem 2.5rem',
+                            borderRadius: '9999px',
+                            fontWeight: 'bold',
+                            fontSize: '1.125rem',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '0.75rem',
+                            transition: 'all 0.3s ease',
+                            boxShadow: '0 10px 25px -5px rgba(37, 99, 235, 0.3)',
+                            border: 'none',
+                            cursor: 'pointer'
+                        }}
+                        onMouseOver={(e) => {
+                            e.currentTarget.style.backgroundColor = '#1d4ed8';
+                            e.currentTarget.style.transform = 'translateY(-2px)';
+                        }}
+                        onMouseOut={(e) => {
+                            e.currentTarget.style.backgroundColor = '#2563eb';
+                            e.currentTarget.style.transform = 'translateY(0)';
+                        }}
+                    >
                         Request a Personalized Demo <ArrowRight size={22} />
                     </button>
                 </div>
