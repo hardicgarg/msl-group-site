@@ -14,7 +14,7 @@ const ZenHirePro = () => {
                 subtitle=" Precision Hiring for High-Growth Teams"
                 backgroundImage="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80"
                 primaryAction={{ label: 'We are Hiring', onClick: () => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }) }}
-                secondaryAction={{ label: 'Hire Talent', onClick: () => document.getElementById('services').scrollIntoView({ behavior: 'smooth' }) }}
+                secondaryAction={{ label: 'Visit website', onClick: () => window.open('https://zenhirepro.com/', '_blank', 'noopener,noreferrer') }}
             />
 
             {/* Introduction - using Reusable SplitSection */}
