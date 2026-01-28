@@ -75,16 +75,16 @@ const BharatXcelerate = () => {
                     reverse={true}
                 >
                     <h4 className="text-xl font-bold text-slate-900 mb-4">Why Partner With Us?</h4>
-                    <ul className="space-y-6">
-                        <li className="flex items-start gap-3">
+                    <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                        <li className="flex items-start gap-3" style={{ marginBottom: '1.5rem' }}>
                             <Award className="text-orange-600 flex-shrink-0 mt-1" size={20} />
                             <span className="text-slate-700"><strong>Curriculum Enhancement:</strong> We update your syllabus with the latest industry trends (React, Node, Python, AWS).</span>
                         </li>
-                        <li className="flex items-start gap-3">
+                        <li className="flex items-start gap-3" style={{ marginBottom: '1.5rem' }}>
                             <Users className="text-orange-600 flex-shrink-0 mt-1" size={20} />
                             <span className="text-slate-700"><strong>Faculty Development:</strong> Train the trainer programs to upskill your internal faculty.</span>
                         </li>
-                        <li className="flex items-start gap-3">
+                        <li className="flex items-start gap-3" style={{ marginBottom: '0' }}>
                             <Rocket className="text-orange-600 flex-shrink-0 mt-1" size={20} />
                             <span className="text-slate-700"><strong>Placement Cell Support:</strong> We bring corporate hiring partners directly to your campus.</span>
                         </li>
