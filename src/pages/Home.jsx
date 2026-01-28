@@ -2,6 +2,7 @@ import React from 'react';
 import HeroSection from '../components/HeroSection';
 import Section from '../components/Section';
 import SplitSection from '../components/SplitSection';
+import LogoTicker from '../components/LogoTicker';
 import { motion } from 'framer-motion';
 import { ArrowRight, Layers, Users, Globe, Cpu, Building2, GraduationCap, TrendingUp, Handshake } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -54,6 +55,9 @@ const Home = () => {
                 backgroundImage="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80"
                 primaryAction={{ label: 'Our Verticals', onClick: () => document.getElementById('verticals').scrollIntoView({ behavior: 'smooth' }) }}
             />
+
+            {/* Partners Logo Ticker */}
+            <LogoTicker />
 
             {/* Intro Section - Asymmetric Layout */}
             <section className="section bg-slate-50">

@@ -883,3 +883,77 @@ p {
 .footer-legal span:hover {
   color: white;
 }
+
+/* --- Logo Ticker --- */
+.logo-ticker-section {
+  padding: 4rem 0;
+  background: linear-gradient(to bottom, #f8fafc, #ffffff);
+  overflow: hidden;
+}
+
+.logo-ticker-headline {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.logo-ticker-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo-ticker-fade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 150px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.logo-ticker-fade-left {
+  left: 0;
+  background: linear-gradient(to right, #ffffff, transparent);
+}
+
+.logo-ticker-fade-right {
+  right: 0;
+  background: linear-gradient(to left, #ffffff, transparent);
+}
+
+.logo-ticker-track {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  width: fit-content;
+}
+
+.logo-ticker-item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  padding: 0 1rem;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.logo-ticker-item:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.logo-ticker-image {
+  max-height: 60px;
+  max-width: 180px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
