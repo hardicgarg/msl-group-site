@@ -31,7 +31,7 @@ const BharatXcelerate = () => {
 
                 <div className="flex flex-wrap gap-8 items-start pt-4">
                     <CountUpStat value={50} suffix="+" label="Partner Colleges" color="text-orange-600" />
-                    <CountUpStat value={10000} suffix="+" label="Students Trained" color="text-orange-600" />
+                    <CountUpStat value={1000} suffix="+" label="Students Trained" color="text-orange-600" />
                     <CountUpStat value={500} suffix="+" label="Projects Built" color="text-orange-600" />
                     <CountUpStat value={95} suffix="%" label="Placement Rate" color="text-orange-600" />
                 </div>
