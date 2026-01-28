@@ -51,12 +51,6 @@ const Contact = () => {
                                     B1/E13, BLOCK E, MOHAN COOPERATIVE INDUSTRIAL ESTATE, BADARPUR, NEW DELHI, DELHI 110044
                                 </span>
                             </p>
-                            <p style={{ margin: 0 }}>
-                                <strong style={{ color: '#1a1a1a', fontSize: '0.9rem' }}>USA:</strong>{' '}
-                                <span style={{ color: '#64748b', fontWeight: '500', textTransform: 'uppercase', fontSize: '0.95rem', lineHeight: '1.6' }}>
-                                    AVENTIQ TECHNOLOGIES INC. 5900 BALCONES DRIVE STE 100, AUSTIN, TX 78731, USA
-                                </span>
-                            </p>
                         </div>
 
                         {/* Email */}
